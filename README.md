@@ -13,7 +13,8 @@ Search anything from Flickr to make your Custom Flickr Gallery.
 ### Features
 1. Search anything from Flickr
 2. Choose Picture to add them to your gallery
-3. If the search doesnot exists return "Not Found message"
+3. Load more content is available if the result have more contents
+4. If the search doesnot exists return "Not Found message"
 
 
 ### Version
