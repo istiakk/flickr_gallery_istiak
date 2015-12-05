@@ -1,0 +1,169 @@
+/*Contributors: istiak.mah
+
+>>>>>>> e75616045baf06d6b860eb16ae26850623e8c2c4
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T2J4GWJE5SKQE*/
+
+
+img { max-width: 100%; }
+img[tabindex]:focus {
+    outline: 1;
+}
+body{
+    color: #5DBCD2;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(191,234,247,1) 50%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(191,234,247,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(191,234,247,1) 50%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(191,234,247,1) 50%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(191,234,247,1) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(191,234,247,1) 50%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+}
+.a-c { text-align: center; }
+
+.flick-search {
+    margin: 20px 0;
+}
+
+.flick-gallery {
+    display: none;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.flickr-photo {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 98px;
+    margin: 2px 4px;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+}
+.flickr-photo .glyphicon {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: -100px;
+    font-size: 32px;
+    opacity: 0;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+}
+.flickr-photo.selected {
+    box-shadow: 0 0 0 3px #5cb85c;
+}
+.flickr-photo.selected .glyphicon {
+    visibility: visible;
+    top: 0;
+    opacity: 1;
+    color: #5cb85c;
+    padding: 4px;
+}
+.flickr-photo.selected img {
+    opacity: .2;
+}
+.flick-gallery img {
+    display: block;
+    cursor: pointer;
+}
+.flickr-tip {
+    display: none;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.flick-gallery-head {
+    overflow: hidden;
+    -webkit-transition: .2s all linear;
+    -moz-transition: .2s all linear;
+    -o-transition: .2s all linear;
+    transition: .2s all linear;
+}
+.sticky-header .flick-gallery-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(255,255,255,0.9);
+}
+.flickr-error {
+    margin: 12px 0;
+    padding: 4px 12px;
+    display: none;
+}
+/* More photo Button */
+.flickr-more-photos {
+    display: none;
+}
+.flickr-more-photos,
+.flickr-back {
+    margin: 20px 0;
+}
+
+/* Modal Component */
+.fade.in {
+    background: rgba(0,0,0,0.3);
+}
+.modal-title { word-wrap: break-word; }
+
+/* Loader */
+.loader {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background: rgba(255,255,255,0.9);
+    text-align: center;
+
+}
+.loader-label {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 80px;
+    margin: -25px 0 0 -75px;
+}
+.loader-label .fa {
+    font-size: 35px;
+    color: #5cb85c;
+    vertical-align: middle;
+    display: block;
+    padding: 4px 0;
+}
+
+/* Emptymsg */
+.emptymsg {
+    display: none;
+    margin: 20px 0;
+    text-align: center;
+}
+.emptymsg-label {        
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 80px;
+    margin: -25px 0 0 -75px;
+}
+
+/* Message for Gallery */
+.gallerymsg {
+    display: none;
+    color: #5DBCD2;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    position: relative;
+}

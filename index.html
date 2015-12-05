@@ -1,0 +1,99 @@
+<!--Contributors: istiak.mah
+
+>>>>>>> e75616045baf06d6b860eb16ae26850623e8c2c4
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=T2J4GWJE5SKQE-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flickr Photo Gallery</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="public/images/flickr.png">
+    </head>
+    <body>
+        <br><br>
+
+        <div style="text-align: center">
+            <img src="public/images/istiak.png" alt="istiak" height="42" width="42">
+        </div>
+        <br>
+        <div class="container">
+            <div class="loader" id="js-loader">
+                <div class="loader-label">
+                    <i class="fa fa-spinner fa fa-spin"></i>
+                    Loading content
+                </div>
+            </div>
+            <div class="row col-sm-12">
+                <div class="flick-search">
+                    <form id="js-search-form" class="row">
+
+                        <div class="col-md-8 col-md-offset-2">
+                            <div id="js-search-error" class="alert alert-danger flickr-error" role="alert">Please, fill the search field.</div>
+                            <div class="input-group">
+                                <input id="js-search-input" type="text" class="form-control" placeholder="Search Anything from Flickr ..." required title="Please Give Something to Search ...!" >
+                                <span class="input-group-btn">
+                                    <button id="js-search-btn" class="btn btn-success">I Wanna Find !</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row col-sm-12">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="emptymsg" id="js-emptymsg">
+                                <div class="alert alert-danger">
+                                    <strong>Your Search does not exist !!</strong>
+                                </div>
+                            </div></div></div>
+
+                    <div id="js-flickr-head-space"></div>
+                    <div id="js-gallery" class="flick-gallery">
+                        <div class="flick-gallery-head">
+                            <div class="gallerymsg" id="js-gallerymsg"><h3>Select Pictures For Your Gallery</h3></div>
+                            <div id="js-show-gallery-stat" class="flickr-tip">
+                                <b id="js-show-gallery-count">{count}</b> selected, now you can
+                                <button id="js-show-selected" class="btn btn-success">Show gallery</button>
+                            </div>
+                        </div>
+
+                        <div id="js-gallery-list"></div>
+                        <div id="js-flickr-more-container" class="flickr-more-photos a-c">
+                            <button id="js-flickr-more-btn" class="btn btn-success">Load more</button>
+                        </div>
+                    </div>
+
+                    <div id="js-gallery-selected" class="flick-gallery">
+                        <h3 id="js-chosen-title">Your gallery:</h3>
+                        <div class="flickr-back a-c">
+                            <button id="js-gallery-back" class="btn btn-success">Back to list</button>
+                        </div>
+                        <div id="js-gallery-selected-list"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="js-modal-template" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="js-modal-close" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 id="js-modal-title" class="modal-title">{title}</h4>
+                    </div>
+                    <div id="js-modal-content" class="modal-body a-c">{photo}</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/core.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/app.js"></script>
+
+    </body>
+</html>
