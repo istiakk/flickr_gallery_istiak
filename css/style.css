@@ -22,7 +22,29 @@ body{
 .a-c { text-align: center; }
 
 .flick-search {
-    margin: 20px 0;
+    margin: 20px 0;font-style: italic;
+}
+
+.form-control {
+    
+  display: inline-block;
+  background: -webkit-linear-gradient(0deg, rgba(180,227,145,0.3) 0, rgba(97,196,25,0.9) 100%, rgba(180,227,145,0.3) 100%);
+  background: -moz-linear-gradient(90deg, rgba(180,227,145,0.3) 0, rgba(97,196,25,0.9) 100%, rgba(180,227,145,0.3) 100%);
+  background: linear-gradient(90deg, rgba(180,227,145,0.3) 0, rgba(97,196,25,0.9) 100%, rgba(180,227,145,0.3) 100%);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .flick-gallery {
